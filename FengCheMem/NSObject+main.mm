@@ -38,8 +38,9 @@ UITextField*TextField;
                                       memRect:CGRectMake(150, 100, 350, 350)
                                     memRadius:5
                                   actionBlock:^{
-        NSString * km =[[NSUserDefaults standardUserDefaults] objectForKey:@"km"];
-//        [[WX_NongShiFu123 alloc] yanzhengAndUseIt:km];//打开菜单就验证一次
+        //点击显示菜单后调用的代码 比如跨进程注销生效防止天卡永久使用 点击菜单就会验证一次卡密
+        NSString * km =[[NSUserDefaults standardUserDefaults] objectForKey:@"km"];//读取本地储存卡密
+//        [[WX_NongShiFu123 alloc] yanzhengAndUseIt:km];//调用验证函数
         
     }];
    

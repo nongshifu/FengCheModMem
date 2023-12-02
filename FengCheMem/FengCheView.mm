@@ -125,7 +125,7 @@ NSString* 验证信息,*到期时间;//验证成功后赋值给到期时间 服�
     UILabel *BT = [[UILabel alloc] initWithFrame:CGRectMake(0, 5, h.frame.size.width, 30)];
     BT.numberOfLines = 0;
     BT.lineBreakMode = NSLineBreakByCharWrapping;
-    BT.text = @"鸡腿绘制";//绘制名字
+    BT.text = Title;//绘制名字
     BT.textAlignment = NSTextAlignmentCenter;
     BT.font = [UIFont boldSystemFontOfSize:15];
     BT.textColor = [UIColor blackColor];
